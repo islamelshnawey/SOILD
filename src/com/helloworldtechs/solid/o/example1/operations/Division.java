@@ -4,33 +4,33 @@ import com.helloworldtechs.solid.o.example1.CalculatorOperation;
 
 public class Division implements CalculatorOperation {
 
-    private double left;
-    private double right;
+    private double value1;
+    private double value2;
     private double result;
 
     // constructor, getters and setters
     @Override
     public double perform() {
-        if (right != 0) {
-           return result = left / right;
+        if (value2 != 0) {
+           return result = value1 / value2;
         }
         return 0;
     }
 
-    public double getLeft() {
-        return left;
+    public double getValue1() {
+        return value1;
     }
 
-    public void setLeft(double left) {
-        this.left = left;
+    public void setValue1(double value1) {
+        this.value1 = value1;
     }
 
-    public double getRight() {
-        return right;
+    public double getValue2() {
+        return value2;
     }
 
-    public void setRight(double right) {
-        this.right = right;
+    public void setValue2(double value2) {
+        this.value2 = value2;
     }
 
     public double getResult() {
